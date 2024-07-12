@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mantra</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <%- include('blocks/header') -%>
+    <h2><%= category.catName %></h2>
+    <% let catMantras = mantras.filter((mantra) => mantra.mantraCat === category.catId); %>
+
+    <% catMantras.map((mantra) => { %>
+        <a href="/mantras/<%= mantra.mantraName %>"><%= mantra.mantraName %></a>
+    <% }) %> 
+
+    <a href="/">Гоу на головну!</a>
+</body>
+</html>

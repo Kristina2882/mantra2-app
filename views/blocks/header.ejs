@@ -1,0 +1,24 @@
+
+<header>
+    <form method="get" action="/get-random">
+        <button class="random-btn" type="submit">🍆</button>
+    </form>
+    <form class="search-mantra" method="post" action="/search-mantra">
+        <input type="text" name="mantraName" />
+        <button type="submit" class="search-btn">🔍</button>
+    </form>
+    <form class="add-mantra" method="post" action="/new-mantra">
+        <input type="text" name="mantraName"/>
+        <input type="textarea" name="mantra"/>
+        <select name="mantraCat">
+            <option value="0"></option>
+            <option value="1">Про Миздрія</option>
+            <option value="2">Про сили пошлості</option>
+            <option value="3">Допомога в сексі</option>
+            <option value="4">Допомога в роботі</option>
+            <option value="5">Захисні мантри</option>
+            <option value="6">Іменні мантри</option>
+        </select>
+    <button type="submit" class="add-btn">➕</button>
+    </form>
+    </header>
