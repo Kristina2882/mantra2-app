@@ -1,15 +1,10 @@
 {
   "name": "mantra2-app",
   "version": "1.0.0",
-  "repository": {
-    "url": "git+https://github.com/Kristina2882/mantra2-app.git"
-  },
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-     "predeploy": "npm run start",
-   "deploy": "gh-pages -d dist"
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
@@ -20,8 +15,5 @@
     "ejs": "^3.1.10",
     "express": "^4.19.2",
     "firebase": "^9.23.0"
-  },
-  "devDependencies": {
-    "gh-pages": "^6.1.1"
   }
 }
